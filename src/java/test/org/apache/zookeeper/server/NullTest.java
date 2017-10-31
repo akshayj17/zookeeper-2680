@@ -12,6 +12,7 @@ public class NullTest {
     @Test
     public void testGetChildren() {
         DataNode dataNode = new DataNode();
+        System.out.println("Test Null Started");
         Set<String> children = dataNode.getChildren();
         assertNotNull(children);
         assertEquals(0, children.size());
@@ -22,6 +23,7 @@ public class NullTest {
         children = dataNode.getChildren();
         assertNotNull(children);
         assertEquals(0, children.size());
+        System.out.println("Test Successful");
     }
 
 }
